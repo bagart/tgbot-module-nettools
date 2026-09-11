@@ -68,6 +68,27 @@ final class NettoolsWebUi implements TgSettingsFormContract, TgWebUiContract
                 'heavy_confirm' => 'Подтверждение тяжёлых проверок',
                 'auto_capture' => 'Автосохранение результатов в память целей',
             ],
+            'fr' => [
+                'nettools' => 'Outils réseau',
+                'chat_ui' => 'Sortie dans le chat',
+                'detail_mode' => 'Détail des rapports de sonde',
+                'heavy_confirm' => 'Confirmer les sondes lourdes',
+                'auto_capture' => 'Capture automatique des résultats en mémoire cible',
+            ],
+            'es' => [
+                'nettools' => 'Herramientas de red',
+                'chat_ui' => 'Salida en el chat',
+                'detail_mode' => 'Detalle del informe de sonda',
+                'heavy_confirm' => 'Confirmar sondas pesadas',
+                'auto_capture' => 'Captura automática de resultados en memoria de destino',
+            ],
+            'zh' => [
+                'nettools' => '网络工具',
+                'chat_ui' => '聊天输出',
+                'detail_mode' => '探测报告详细程度',
+                'heavy_confirm' => '确认重型探测',
+                'auto_capture' => '自动保存结果到目标记忆',
+            ],
         ];
     }
 
