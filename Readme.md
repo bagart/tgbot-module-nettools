@@ -114,7 +114,7 @@ Passive public data only. Scan your own hosts. Local laws apply.
 
 ## Menu integration
 
-Menu-hub surface per telegram-platform-menu/docs/tasks/menu_integration.md (M-4):
+Menu-hub surface per `telegram-platform-menu` contribution system (M-4):
 NettoolsWebUi (schema over the per-chat ChatSettings overlay keys), NettoolsChatSettingsHandler
 (GET chat-settings / PUT chat-settings/apply), NettoolsUiHandler (GET targets) and
 NettoolsTargetsResource (user-scoped resource picker). Engine toggles stay in config
