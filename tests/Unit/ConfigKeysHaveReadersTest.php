@@ -19,6 +19,7 @@ final class ConfigKeysHaveReadersTest extends TestCase
 {
     /** path → where it is read (literal dotted key or the settings-tree note) */
     private const array READERS = [
+        'debug' => 'ProbeCommand (safe config fallback, no Laravel container required)',
         'features.recon' => 'NettoolsSettings::fromArray() [config(\'tg-nettools\') tree]',
         'features.active' => 'NettoolsSettings::fromArray()',
         'features.audit' => 'NettoolsSettings::fromArray()',

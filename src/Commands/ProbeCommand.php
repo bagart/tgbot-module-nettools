@@ -182,7 +182,13 @@ abstract class ProbeCommand implements TgModuleProcessorContract
             $this->services->memory()->recordUse($userId, $netTarget->host, static::NAME);
             $ok = true;
         } catch (\Throwable $exception) {
-            if (getenv('NT_DEBUG') !== false) {
+            try {
+                $debug = (bool) config('tg-nettools.debug', false);
+            } catch (\Throwable) {
+                $debug = false;
+            }
+
+            if ($debug) {
                 throw $exception;
             }
             $card = ErrorCard::fromException($exception, (int) $chatId, CallbackGrammar::encode('retry', (int) $chatId));

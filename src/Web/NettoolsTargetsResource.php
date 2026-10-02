@@ -24,7 +24,8 @@ final readonly class NettoolsTargetsResource implements TgResourceProviderContra
 {
     public function __construct(
         private TargetRepositoryContract $targets,
-    ) {}
+    ) {
+    }
 
     public static function domain(): string
     {

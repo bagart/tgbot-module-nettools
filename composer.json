@@ -40,7 +40,7 @@
     },
     "scripts": {
         "test": [
-            "@php ../../../vendor/bin/phpunit --testsuite NettoolsModule"
+            "@php ../../../vendor/bin/pest --testsuite NettoolsModule"
         ]
     },
     "repositories": {

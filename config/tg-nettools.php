@@ -14,6 +14,9 @@ declare(strict_types=1);
 */
 
 return [
+    // Debug mode: when true, exceptions bubble up instead of being caught.
+    'debug' => env('NT_DEBUG', false),
+
     // Kill-switch per probe group
     'features' => [
         'recon' => true,    // ip, whois, dns, geo, asn

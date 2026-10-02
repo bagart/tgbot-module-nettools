@@ -22,7 +22,7 @@ it('exposes a module-scoped resource domain and member-readable meta', function 
 });
 
 it('searches only the context user targets', function () {
-    $repo = new InMemoryTargetRepository;
+    $repo = new InMemoryTargetRepository();
     $repo->upsert(1, 'example.com');
     $repo->upsert(1, 'github.com');
     $repo->upsert(2, 'secret.internal');
@@ -35,7 +35,7 @@ it('searches only the context user targets', function () {
 });
 
 it('filters by query text across host and label', function () {
-    $repo = new InMemoryTargetRepository;
+    $repo = new InMemoryTargetRepository();
     $repo->upsert(1, 'example.com');
     $repo->upsert(1, 'github.com');
     $repo->setPinned(1, 'github.com', true);
@@ -48,7 +48,7 @@ it('filters by query text across host and label', function () {
 });
 
 it('validates membership and rejects foreign hosts', function () {
-    $repo = new InMemoryTargetRepository;
+    $repo = new InMemoryTargetRepository();
     $repo->upsert(1, 'example.com');
     $repo->upsert(2, 'secret.internal');
 

@@ -36,6 +36,7 @@ final class NettoolsModule implements TgModuleContract
             id: self::ID,
             name: 'Nettools',
             version: self::VERSION,
+            requiresModules: ['menu' => '*'],
             capabilities: [
                 TgModuleCapability::Processor,
                 TgModuleCapability::Command,
