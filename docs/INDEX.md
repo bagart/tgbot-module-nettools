@@ -4,7 +4,7 @@
 
 | Need | File |
 |---|---|
-| What it does, decisions | `SDD-nettools` |
+| What it does, decisions | [`sdd/nettools.md`](sdd/nettools.md) |
 
 ## Source map (src/)
 
